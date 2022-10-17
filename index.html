@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/bootstrap.min.csss">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <title>Delivery food</title>
+</head>
+<body>
+        <header class="header">
+            <div class="container header">
+                <img src="image/logo.svg" alt="Logo" class="logo wow bounce">
+                <input type="text" class="search_input" placeholder="Адрес замовлення" />
+                <div class="buttons">
+                    <span class="user_name"></span>
+                    <button class="button btn-primary button_auth" id="login_button">
+                        <img src="image/user.svg" class="btn-img" alt="user">
+                        Ввійти
+                    </button>
+                    <button class="button" id="cart_button">
+                        <img src="image/shopping-cart.svg" class="btn-img" alt="Кошик" />
+                        Кошик  
+                    </button>
+                    <button class="button button-primary button_out">
+                        <img src="image/user.svg" alt="out" class="btn-img">
+                        Вийти
+                    </button>
+                </div>
+            </div>    
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="promo">
+                    <h1 class="promo-title">
+                        Онлайн-сервіс <br> доставки їжі додому
+                    </h1>
+                    <p class="promo-text">
+                        Страви з улюбленого ресторану привезе 
+                        кур'єр у рукавичках, масці та з антисептиком.
+                    </p>
+                </div>
+                <div class="res">
+                    <div class="res-heading">
+                        <h2 class="res-title">Ресторани</h2>
+                        <input type="text" class="input-res" placeholder="Пошук страв та ресторанів">
+                    </div>
+                    <div class="cards">
+                        <div class="card wow bounceInLeft">
+                            <img src="image/card1.png" alt="piza_image" class="card-image">
+                            <div class="card-text">
+                                <div class="card-heading">
+                                    <h3 class="card-title">
+                                        Піца плюс
+                                    </h3>
+                                    <span class="card-tag tag">50 хвилин</span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="rating"><img src="image/star.svg">4.5</div>
+                                    <div class="price">Від 100$</div>
+                                    <div class="category">Піца</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card wow bounceInDown">
+                            <img src="image/card2.png" alt="piza_image" class="card-image">
+                            <div class="card-text">
+                                <div class="card-heading">
+                                    <h3 class="card-title">
+                                        Тануки 
+                                    </h3>
+                                    <span class="card-tag tag">50 хвилин</span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="rating"><img src="image/star.svg">4.5</div>
+                                    <div class="price">Від 100$</div>
+                                    <div class="category">Піца</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card wow bounceInRight">
+                            <img src="image/card3.png" alt="piza_image" class="card-image">
+                            <div class="card-text">
+                                <div class="card-heading">
+                                    <h3 class="card-title">
+                                        FoodBand
+                                    </h3>
+                                    <span class="card-tag tag">50 хвилин</span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="rating"><img src="image/star.svg">4.5</div>
+                                    <div class="price">Від 100$</div>
+                                    <div class="category">Піца</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card wow rotateInUpLeft">
+                            <img src="image/card4.png" alt="piza_image" class="card-image">
+                            <div class="card-text">
+                                <div class="card-heading">
+                                    <h3 class="card-title">
+                                        Жадина-піца
+                                    </h3>
+                                    <span class="card-tag tag">50 хвилин</span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="rating"><img src="image/star.svg">4.5</div>
+                                    <div class="price">Від 100$</div>
+                                    <div class="category">Піца</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card wow flipInX">
+                            <img src="image/card5.png" alt="piza_image" class="card-image">
+                            <div class="card-text">
+                                <div class="card-heading">
+                                    <h3 class="card-title">
+                                        Крапка їжі
+                                    </h3>
+                                    <span class="card-tag tag">50 хвилин</span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="rating"><img src="image/star.svg">4.5</div>
+                                    <div class="price">Від 100$</div>
+                                    <div class="category">Піца</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card wow rotateInUpRight">
+                            <img src="image/card6.png" alt="piza_image" class="card-image">
+                            <div class="card-text">
+                                <div class="card-heading">
+                                    <h3 class="card-title">
+                                        PizzaBurger
+                                    </h3>
+                                    <span class="card-tag tag">50 хвилин</span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="rating"><img src="image/star.svg">4.5</div>
+                                    <div class="price">Від 100$</div>
+                                    <div class="category">Піца</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </main>
+
+        <footer class="footer">
+            <div class="container footer_flex">
+                <div class="content_footer">
+                     <img src="image/logo.svg" alt="Logo" class="logo">
+                        <a href="#">Ресторанам</a>
+                        <a href="#">Кур'єрам</a>
+                        <a href="#">Прес-центр</a>
+                        <a href="#">Контакти</a>
+                </div>
+                <div class="social_icons">
+                    <a href="#"><img src="image/instagram.svg"></a>
+                    <a href="#"><img src="image/facebook.svg"></a>
+                    <a href="#" class="icon"><img src="image/telegram.svg"></a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal">
+            <div class="modal_content">
+                <div class="modal_header">
+                    <div class="modal_title">Кошик</div>
+                    <button class="close" id="close_button">&times;</button>
+                </div>
+                <div class="modal_orders">
+                    <div class="foods_row">
+                        <div class="food_name">
+                            Ролл угорь стандарт
+                        </div>
+                        <div class="food_options">
+                            <strong class="count_price">250 $</strong>
+                            <div class="counter">
+                                <button class="counter_btn">-</button>
+                                <span class="count">1</span>
+                                <button class="counter_btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foods_row">
+                        <div class="food_name">
+                            Ролл угорь стандарт
+                        </div>
+                        <div class="food_options">
+                            <strong class="count_price">250 $</strong>
+                            <div class="counter">
+                                <button class="counter_btn">-</button>
+                                <span class="count">1</span>
+                                <button class="counter_btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foods_row">
+                        <div class="food_name">
+                            Ролл угорь стандарт
+                        </div>
+                        <div class="food_options">
+                            <strong class="count_price">250 $</strong>
+                            <div class="counter">
+                                <button class="counter_btn">-</button>
+                                <span class="count">1</span>
+                                <button class="counter_btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foods_row">
+                        <div class="food_name">
+                            Ролл угорь стандарт
+                        </div>
+                        <div class="food_options">
+                            <strong class="count_price">250 $</strong>
+                            <div class="counter">
+                                <button class="counter_btn">-</button>
+                                <span class="count">1</span>
+                                <button class="counter_btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foods_row">
+                        <div class="food_name">
+                            Ролл угорь стандарт
+                        </div>
+                        <div class="food_options">
+                            <strong class="count_price">250 $</strong>
+                            <div class="counter">
+                                <button class="counter_btn">-</button>
+                                <span class="count">1</span>
+                                <button class="counter_btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_buttons">
+                    <div class="total">1250 $</div>
+                <div class="btn">
+                    <button class="submit">Оформити замовлення</button>
+                    <button class="cancel">Відмінити</button>  
+                </div> 
+                </div>
+            </div>
+        </div>
+
+        <form class="login_form" id="login_form">
+            <div class="modal_content" style="justify-content: flex-start;" >
+                <div class="modal_header">
+                    <div class="modal_title">Авторизація</div>
+                    <button class="close" id="close_buttonn">&times;</button>
+                </div>
+                <div class="login_content" style="height:100%;">
+                    <input type="text" name="login" id="login" placeholder="Логін" value=""> <br>
+                    <input type="password" name="password" placeholder="Пароль" value=""> <br>
+                    <button class="login" type="" id="submit_button">Авторизація</button>
+                </div>
+            </div>
+        </form>
+
+    <script src="css/wow.min.js"></script>
+    <script src="css/main.js"></script>
+</body>
+</html>

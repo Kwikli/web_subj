@@ -1,0 +1,34 @@
+footer{
+    background-color: #ffffff;
+}
+.social_icons a img{
+    transition: 0.1s;
+    height: 30px;
+    width: 30px;
+    margin: 0 8px;
+}
+.social_icons a img:hover{
+    filter:contrast(3);
+    transform: scale(1.05);
+}
+.footer_flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    align-items: center;
+}
+.content_footer a{
+    font-size: 20px;
+    line-height: 1rem;
+    padding: 5px 8px;   
+}
+.content_footer{
+    display: flex;
+    align-items: center;
+}
+.social_icons a{
+    width: 50px;
+}
+.icon{
+    width: 60px !important;
+}
