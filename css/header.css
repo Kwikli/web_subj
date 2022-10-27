@@ -109,3 +109,6 @@ input{
 .warning{
     border: 1px solid #f50000;
 }
+.hidden_dom{
+    display: none;
+}

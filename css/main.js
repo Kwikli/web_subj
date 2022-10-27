@@ -7,6 +7,7 @@ const modal = document.querySelector(".modal");
 const close = document.querySelector(".close");
 const loginnForm = document.querySelector(".login_form");
 const body = document.querySelector('body');
+const submitBtn = document.querySelector('#submit_button');
 
 cartButton.addEventListener("click", function(event){
     modal.classList.add("is-open");
@@ -27,6 +28,20 @@ close.addEventListener("click", function(event){
     modal.classList.remove("is-open");
     loginnForm.classList.remove("is-open");
     body.style.overflow = 'scroll';
+});
+
+// submitBtn.addEventListener("click", function(){
+//     if(login){
+//         body.style.overflow = 'scroll';
+//     }
+// });
+
+body.addEventListener('mouseover',function(){
+    if(logInForm.classList == 'login_form is-open'){
+        body.style.overflow = 'hidden';
+    }else{
+        body.style.overflow = 'scroll';
+    }
 });
 
 
@@ -118,3 +133,67 @@ function checkAuth() {
 }
 
 checkAuth();
+
+
+
+
+const dom = document.querySelector('.card_btn');
+const domForm = document.querySelector('dom');
+const main = document.querySelector('main');
+const backtomain = document.querySelector('.backtomain');
+
+dom.addEventListener('click',function(){
+    if(login){
+        domForm.classList.remove('hidden_dom');
+        main.classList.add('hidden_dom');
+        body.style.overflow = 'scroll';
+    }else{
+        loginnForm.classList.add("is-open");
+        body.style.overflow = 'hidden';
+        
+    }
+    
+});
+backtomain.addEventListener('click',function(){
+    domForm.classList.add('hidden_dom');
+    main.classList.remove('hidden_dom');
+});
+
+
+
+
+
+
+
+
+
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
